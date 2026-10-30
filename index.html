@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제주 날씨 3D</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="view"></div>
+    <aside class="panel">
+      <h1>🌤 제주 날씨 3D</h1>
+      <p class="sub" id="when">기상청 초단기실황</p>
+
+      <div class="grid-input">
+        <label>nx <input id="nx" type="number" value="52" /></label>
+        <label>ny <input id="ny" type="number" value="33" /></label>
+      </div>
+      <div class="btns">
+        <button id="refresh">불러오기</button>
+        <button id="sample" class="ghost">샘플</button>
+        <button id="save" disabled>DB에 저장</button>
+      </div>
+      <p id="msg" class="msg"></p>
+
+      <dl id="values"></dl>
+
+      <h2>최근 저장 기록</h2>
+      <ul id="recent"></ul>
+    </aside>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
